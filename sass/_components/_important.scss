@@ -1,0 +1,24 @@
+.important {
+    padding-bottom: 47px;
+
+&__icons {
+    display: flex;
+    height: 120px;
+    width: 270px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    background-color: var(--grey-bgr-color);
+}
+
+&__case {
+    display: flex;
+}
+&__item {
+    width: 270px;
+}
+&__item + &__item {
+    margin-left: 30px;
+}
+}
+
