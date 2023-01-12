@@ -7,14 +7,14 @@
     justify-content: space-between;
     align-items: center;
 }
-.cite-nav {
+.header__nav {
     display: flex;
-}
-.nav { 
+
+    &__list { 
     display: flex; 
     list-style: none;
     text-decoration: none;
-
+}
     &__item  {
     margin-right: 50px;
 }
@@ -60,7 +60,7 @@
 }
 }
 
-.contact-nav {
+.header__contact {
     display: flex;
 
 &__item + &__item {

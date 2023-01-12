@@ -128,26 +128,25 @@ img {
           align-items: center;
 }
 
-.cite-nav {
+.header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
-.nav {
+.header__nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
   text-decoration: none;
 }
-.nav__item {
+.header__nav__item {
   margin-right: 50px;
 }
-.nav__item:last-child {
+.header__nav__item:last-child {
   margin-right: 0;
 }
-.nav__link {
+.header__nav__link {
   -webkit-transition: color 250ms var(--cubic);
   transition: color 250ms var(--cubic);
   display: block;
@@ -161,10 +160,10 @@ img {
   list-style: none;
   text-decoration: none;
 }
-.nav__link--current {
+.header__nav__link--current {
   position: relative;
 }
-.nav__link--current::after {
+.header__nav__link--current::after {
   position: absolute;
   bottom: -1px;
   width: 100%;
@@ -173,23 +172,23 @@ img {
   border-bottom: 4px solid var(--accent-text-color);
   border-radius: 2px;
 }
-.nav__link--current {
+.header__nav__link--current {
   color: var(--accent-text-color);
 }
-.nav__link:hover, .nav__link:focus {
+.header__nav__link:hover, .header__nav__link:focus {
   color: var(--accent-text-color);
   fill: var(--accent-text-color);
 }
 
-.contact-nav {
+.header__contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.contact-nav__item + .contact-nav__item {
+.header__contact__item + .header__contact__item {
   margin-left: 40px;
 }
-.contact-nav__link {
+.header__contact__link {
   -webkit-transition: color 250ms var(--cubic), fill 250ms var(--cubic);
   transition: color 250ms var(--cubic), fill 250ms var(--cubic);
   fill: var(--primary-text-color);
@@ -212,12 +211,12 @@ img {
   list-style: none;
   text-decoration: none;
 }
-.contact-nav__link:hover, .contact-nav__link:focus {
+.header__contact__link:hover, .header__contact__link:focus {
   color: var(--accent-text-color);
   fill: var(--accent-text-color);
 }
 
-.logo {
+.header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -233,7 +232,7 @@ img {
   list-style: none;
   text-decoration: none;
 }
-.logo span {
+.header__logo span {
   color: var(--accent-text-color);
 }
 
@@ -936,9 +935,11 @@ textarea {
   transition: transform 250ms var(--cubic);
   transition: transform 250ms var(--cubic), -webkit-transform 250ms var(--cubic);
 }
-.portfolio__items:hover .portfolio__overlay {
+.portfolio__link:hover .portfolio__overlay, .portfolio__link:focus .portfolio__overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+  -webkit-box-shadow: var(--portfolio-shadow-color);
+          box-shadow: var(--portfolio-shadow-color);
 }
 .portfolio__overlay--text {
   margin: 63px 24px;

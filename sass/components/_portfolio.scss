@@ -56,9 +56,13 @@
     transform: translateY(101%);
     transition: transform 250ms var(--cubic); 
 }
-&__items:hover &__overlay {
-    transform: translateY(0);
+
+&__link:hover &__overlay,
+&__link:focus &__overlay {
+transform: translateY(0);
+box-shadow: var(--portfolio-shadow-color);
 }
+
 &__overlay--text {
     margin: 63px 24px;
     font-size: 18px;
